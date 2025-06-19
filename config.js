@@ -21,18 +21,18 @@ module.exports = {
     READ_MESSAGE: process.env.READ_MESSAGE || "true",
     OWNER_NAME: process.env.OWNER_NAME || "Crypton",
     BOT_NAME: process.env.BOT_NAME || "Kord",
-    RENDER_API_KEY: process.env.RENDER_API_KEY,
+    RENDER_API_KEY: process.env.https://kord-ai-trap2970.onrender.com,
     ANTIDELETE: process.env.ANTIDELETE || "on",
     ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "on",
     AUDIO_DATA: process.env.AUDIO_DATA || "Kord;🤍",
     SUDO: process.env.SUDO || "254768368867", // example: 23412345667,2341234567
     MODS: process.env.MODS || "",
     REJECT_CALL: process.env.REJECT_CALL || "on",
-    WARNCOUNT: process.env.WARNCOUNT || "4",
+    WARNCOUNT: process.env.WARNCOUNT || "2",
     LANG_CODE: process.env.LANG_CODE || "en",
     VV_CMD: process.env.VV_CMD || "👀",
     RES_TYPE: process.env.RES_TYPE || "text",
-    CMD_REACT: process.env.CMD_REACT || "off",
+    CMD_REACT: process.env.CMD_REACT || "on",
     LOG_MESSAGES: process.env.LOG_MESSAGES || "off" // on/off
 }
 
