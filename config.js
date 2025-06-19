@@ -6,7 +6,7 @@ module.exports = {
     SESSION_ID: process.env.SESSION_ID || 'kord_ai-bf8umMM0S8kf61of',
     OWNER_NUMBER: process.env.OWNER_NUMBER || "254768368867",
     WORKTYPE: process.env.WORKTYPE || "private",
-    PREFIX: process.env.PREFIX || "[!]",
+    PREFIX: process.env.PREFIX || "[.]",
     ALWAYS_ONLINE: process.env.ALWAYS_ONLINE || true,
     MONGODB_URI: process.env.MONGODB_URI || "",
     STATUS_VIEW: process.env.STATUS_VIEW || true,
@@ -16,16 +16,16 @@ module.exports = {
     CAPTION: process.env.CAPTION || "",
     STICKER_PACKNAME: process.env.STICKER_PACKNAME || "Kord",
     STICKER_AUTHOR: process.env.STICKER_AUTHOR || "🤍",
-    BOT_PRESENCE: process.env.BOT_PRESENCE || "available", // for online, "composing" for typing 
+    BOT_PRESENCE: process.env.BOT_PRESENCE || "composing", // for online, "composing" for typing 
     REACT: process.env.REACT || false,
-    READ_MESSAGE: process.env.READ_MESSAGE || "false",
-    OWNER_NAME: process.env.OWNER_NAME || "Thunder",
+    READ_MESSAGE: process.env.READ_MESSAGE || "true",
+    OWNER_NAME: process.env.OWNER_NAME || "Crypton",
     BOT_NAME: process.env.BOT_NAME || "Kord",
     RENDER_API_KEY: process.env.RENDER_API_KEY,
     ANTIDELETE: process.env.ANTIDELETE || "on",
     ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "on",
     AUDIO_DATA: process.env.AUDIO_DATA || "Kord;🤍",
-    SUDO: process.env.SUDO || "254792057306", // example: 23412345667,2341234567
+    SUDO: process.env.SUDO || "254768368867", // example: 23412345667,2341234567
     MODS: process.env.MODS || "",
     REJECT_CALL: process.env.REJECT_CALL || "on",
     WARNCOUNT: process.env.WARNCOUNT || "4",
