@@ -23,11 +23,11 @@ module.exports = {
     READ_MESSAGE: process.env.READ_MESSAGE || "false",
     OWNER_NAME: process.env.OWNER_NAME || "Trap",
     BOT_NAME: process.env.BOT_NAME || "Kord",
-    RENDER_API_KEY: process.env.RENDER_API_KEY,
+    RENDER_API_KEY:https://kord-ai-trap2970.onrender.com process.env.RENDER_API_KEY,
     ANTIDELETE: process.env.ANTIDELETE || "on",
     ANTIDELETE_INCHAT: process.env.ANTIDELETE_INCHAT || "on",
     ANTI_EDIT: process.env.ANTI_EDIT || "on",
-    ANTI_EDIT_IN_CHAT: process.env.ANTI_EDIT_IN_CHAT || "off",
+    ANTI_EDIT_IN_CHAT: process.env.ANTI_EDIT_IN_CHAT || "on",
     AUDIO_DATA: process.env.AUDIO_DATA || "Kord;🤍",
     SUDO: process.env.SUDO || "254792057306", // example: 
     MODS: process.env.MODS || "",
