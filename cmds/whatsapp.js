@@ -509,18 +509,21 @@ kord({
   fromMe: false,
 }, async (m) => {
   try {
-    let global = await getData("pfilter") || {}
-    let gmatch = global["pm"]?.[m.body?.toLowerCase()]
-    if (gmatch) {
-      if (gmatch.type && gmatch.file) {
-        let buff = Buffer.from(gmatch.file, "base64")
-        return await m.send(buff, { caption: gmatch.caption, mimetype: gmatch.mimetype }, gmatch.type.replace("Message", ""))
-      } else {
-        return await m.send(gmatch.msg)
-      }
-    }
+    if (m.sender === m.ownerJid) return
 
-    if (!m.isGroup) return
+    if (!m.isGroup) {
+      let global = await getData("pfilter") || {}
+      let gmatch = global["pm"]?.[m.body?.toLowerCase()]
+      if (gmatch) {
+        if (gmatch.type && gmatch.file) {
+          let buff = Buffer.from(gmatch.file, "base64")
+          return await m.send(buff, { caption: gmatch.caption, mimetype: gmatch.mimetype }, gmatch.type.replace("Message", ""))
+        } else {
+          return await m.send(gmatch.msg)
+        }
+      }
+      return
+    }
 
     let local = await getData("gfilter") || {}
     let res = local[m.chat]?.[m.body?.toLowerCase()]
